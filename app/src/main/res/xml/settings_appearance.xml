@@ -23,6 +23,16 @@
         android:title="@string/settings_preference_category_application">
 
         <DropDownPreference
+            android:key="app_language"
+            android:title="@string/settings_language"
+            android:entries="@array/language_entries"
+            android:entryValues="@array/language_values"
+            android:persistent="false"
+            android:layout="@layout/preference_dropdown_md"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+
+        <DropDownPreference
             android:defaultValue="0"
             android:entries="@array/theme_switch"
             android:entryValues="@array/theme_switch_val"

@@ -89,6 +89,8 @@
     <string name="home_menu_about">About</string>
     <string name="opensource_info">Open-sourced under GPL-3.0\nCopyright © 2024 Akane Foundation</string>
     <string name="playlist_favourite">Favourite</string>
+    <string name="settings_language">Language</string>
+    <string name="language_system">System</string>
     <!-- Not translatable -->
     <string name="app_name">Accord</string>
     <string name="default_time" translatable="false">0:00</string>

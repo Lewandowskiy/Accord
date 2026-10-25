@@ -78,6 +78,8 @@
     <string name="recently_added">Недавно добавленные</string>
     <string name="folders">Папки</string>
     <string name="settings_app_theme">Тема приложения</string>
+    <string name="settings_language">Язык</string>
+    <string name="language_system">Системный</string>
     <!-- Not translatable -->
     <string name="natural_order">По возрастанию</string>
     <string name="grid">Сетка</string>

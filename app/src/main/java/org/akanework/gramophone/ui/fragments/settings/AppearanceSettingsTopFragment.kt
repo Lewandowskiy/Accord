@@ -20,6 +20,8 @@ package org.akanework.gramophone.ui.fragments.settings
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
+import androidx.preference.DropDownPreference
 import org.akanework.gramophone.R
 import org.akanework.gramophone.ui.fragments.BasePreferenceFragment
 import org.akanework.gramophone.ui.fragments.BaseSettingFragment
@@ -30,6 +32,19 @@ class AppearanceSettingsFragment : BaseSettingFragment(R.string.settings_categor
 class AppearanceSettingsTopFragment : BasePreferenceFragment() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.settings_appearance, rootKey)
+
+        findPreference<DropDownPreference>("app_language")?.apply {
+            value = AppCompatDelegate.getApplicationLocales().toLanguageTags().ifEmpty { "system" }
+
+            setOnPreferenceChangeListener { _, newValue ->
+                val tag = newValue as String
+                AppCompatDelegate.setApplicationLocales(
+                    if (tag == "system") LocaleListCompat.getEmptyLocaleList()
+                    else LocaleListCompat.forLanguageTags(tag)
+                )
+                true
+            }
+        }
     }
 
     override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
