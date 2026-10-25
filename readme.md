@@ -2,7 +2,7 @@
 
 A local music player for Android with an Apple-inspired design. Supports synced lyrics (LRC/SRT), gapless playback, and third-party equalizers.
 
-A fork of [Accord](https://github.com/v3ndable/Accord) (which, in turn, is a fork of [v3ndable](https://github.com/v3ndable)), but with minor updates and fixes.
+A fork of [Accord](https://github.com/v3ndable/Accord) (which, in turn, is a fork of [@v3ndable](https://github.com/v3ndable)), but with minor updates and fixes.
 
 ## Screenshots
 
@@ -47,9 +47,11 @@ cd Accord
 
 APK will be in `app/build/outputs/apk/release/`.
 
+> <sub><small>Don't forget to sign the release later.</small></sub>
+
 ## Credits
 
-Based on a fork of [v3ndable](https://github.com/v3ndable), which in turn is a fork of [Accord](https://github.com/emylfy/Accord) by [@emylfy](https://github.com/emylfy), which itself is a fork of [Gramophone](https://github.com/AkaneTan/Gramophone) and [AccordLegacy](https://github.com/FoedusProgramme/AccordLegacy).
+Based on a fork of [@v3ndable](https://github.com/v3ndable), which in turn is a fork of [Accord](https://github.com/emylfy/Accord) by [@emylfy](https://github.com/emylfy), which itself is a fork of [Gramophone](https://github.com/AkaneTan/Gramophone) and [AccordLegacy](https://github.com/FoedusProgramme/AccordLegacy).
 
 Original developers: [@AkaneTan](https://github.com/AkaneTan), [@lightsummer233](https://github.com/lightsummer233), [@123Duo3](https://github.com/123Duo3)
 
