@@ -1,4 +1,4 @@
-[English](README.md) | Русский
+[English](readme.md) | Русский
 
 # Accord
 

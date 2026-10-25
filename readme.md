@@ -1,3 +1,5 @@
+English | [Русский](readme.ru.md)
+
 # Accord
 
 A local music player for Android with an Apple-inspired design. Supports synced lyrics (LRC/SRT), gapless playback, and third-party equalizers.
